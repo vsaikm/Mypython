@@ -6,7 +6,7 @@ from email.message import EmailMessage
 from string import  Template
 from pathlib import Path 
 
-html = Template(Path('index.html').read_text())
+html = Template(Path('index').read_text())
 email = EmailMessage()
 email['from'] = 'sai kumar'
 email['to'] = 'sai281996@gmail.com'
