@@ -1,0 +1,5 @@
+https://selenium-python.readthedocs.io/
+
+https://www.seleniumeasy.com/test/
+
+http://allselenium.info/python-selenium-commands-cheat-sheet-frequently-used/
