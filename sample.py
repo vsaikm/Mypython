@@ -1,22 +1,9 @@
-import random#import random
+#Files I/O
+#input something from outside world and output something into the outside world
+my_file = open('test.txt')
+print(my_file.readlines())
+#open function has the idea of the cursor 
+#op:<_io.TextIOWrapper name='test.txt' mode='r' encoding='cp1252'>
 
-def run_guess(guess, answer):
-    if 0 < guess < 11:
-        if  guess == answer:
-            print('you are a genius')
-            return True
-        else:
-            print('please enter from 1~10')
-
-#ask the inout from the user
-#chaec,  whetehr  the input is 1~10
-answer= random.randint(1,10)
-while True:
-    try:
-        guess = int(input('guess  the input number from 1~10 : '))
-        if (run_guess(guess,answer)):
-            break
-
-    except ValueError:
-        print('please enter a  number')
-        continue
+#['Hi my name is sai\n', 'Hi my name is sai\n', 'Hi my name is sai\n', 'Hi my name is sai\n', 'Hi my name is sai\n', ':)']
+my_file.close()
