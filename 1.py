@@ -1,26 +1,28 @@
-#print(1 + True)
-#print(1 + 'hello')
+import re
 
-#error handling
-#def hooooo():
-#    1 + name
 
-#hooooo()#NameError: name 'name' is not defined
+pattern = re.compile('this')
+string = "search this inside of this text please"
 
-while True:
+#print(re.search('this',string))
+#instead of abov command use pattern and chagne as below
+a= pattern.search(string)
+b= pattern.findall(string)
+c= pattern.fullmatch(string)
+d= pattern.match(string)
 
-    try :
-        age = int(input('what is your age?'))
-        10/age
-        
-    except ValueError:
-        print('Please enter the numebr')
+print(a)
+print(b)
+print(c)
+print(d)
 
-    except ZeroDivisionError:
-        print('Please enter the numebr other than 0')
 
-    else:
-        print('thank you!!!')
-        break
-        
-    
+
+#<re.Match object; span=(17, 21), match='this'>
+#a.start
+#a.and
+#a.group
+#regx101 website
+#email validation
+
+
